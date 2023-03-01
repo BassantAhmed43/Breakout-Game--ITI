@@ -1,0 +1,8 @@
+#breakout {
+    position: relative;;
+    top: 1vw; 
+    border-radius: 1vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 4px 0px 30px 5px rgb(221, 129, 129);
+  }
