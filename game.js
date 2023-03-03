@@ -27,12 +27,12 @@ const PADDLE_HEIGHT = 20;
 const BALL_RADIUS = 8;
 let LIFE = 3;
 let SCORE = 0; 
-const SCORE_UNIT = 10;
+let HighScore = 0;
+const SCORE_UNIT = 2;
 //movevment vars:
 let leftArrow = false;
 let rightArrow = false;
-/////
-
+///////////////////////
 
 
 //THE PADDLE..
@@ -127,7 +127,6 @@ function ballBrickCollision(){
           ball.dy = - ball.dy;
           b.status = b.status - 1 ;
           SCORE += SCORE_UNIT;
-          HighScore += SCORE_UNIT;
           let Win = true ;
           for(let i1=0; i1<Brick.row; i1++){
             for(let j1=0; j1<Brick.coluwn; j1++){
@@ -322,6 +321,10 @@ function draw(){
     drawBall();
 
     DrawBricks();
+ // SHOW SCORE
+ showGameStats(SCORE, 35, 25, SCORE_IMG, 5, 5);
+ // SHOW LIVES
+ showGameStats(LIFE, cvs.width - 25, 25, LIFE_IMG, cvs.width-55, 5); 
 
     
 
