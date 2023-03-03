@@ -1,6 +1,13 @@
 //////Background Image///////
 const BKIMG = new Image();
 BKIMG.src = "img/bg.png";
+////////////////////////////
+const LIFE_IMG = new Image();
+LIFE_IMG.src = "img/life.png";
+//////////////////////////////
+
+const SCORE_IMG = new Image();
+SCORE_IMG.src = "img/score.png";
 //////sound//////
 let count = 0;
 let countb = 0;
