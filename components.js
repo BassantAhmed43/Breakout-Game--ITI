@@ -5,6 +5,8 @@ BKIMG.src = "img/bg.png";
 const LIFE_IMG = new Image();
 LIFE_IMG.src = "img/life.png";
 //////////////////////////////
+const High_IMG = new Image();
+High_IMG.src = "img/HighScore.png";
 
 const SCORE_IMG = new Image();
 SCORE_IMG.src = "img/score.png";
