@@ -127,21 +127,7 @@ function ballBrickCollision(){
           ball.dy = - ball.dy;
           b.status = b.status - 1 ;
           SCORE += SCORE_UNIT;
-          let Win = true ;
-          for(let i1=0; i1<Brick.row; i1++){
-            for(let j1=0; j1<Brick.coluwn; j1++){
-              if (bricks[i1][j1].status != 0){
-                Win = false;
-              }
-            }
-          }
-          if (Win == true )
-          {
-            window.location = 'youwon.html';
-  
-          }
-  
-     }
+         
       }
     }
   }
@@ -302,8 +288,7 @@ function ballPaddleCollision(){
         ball.dy = - ball.speed * Math.cos(angle);
     }
 }
-// show game stats
-function showGameStats(text, textX, textY, img, imgX, imgY){
+function showStats(text, textX, textY, img, imgX, imgY){
   // draw text
   ctx.fillStyle = "#FFF";
   ctx.font = "25px Germania One";
@@ -321,10 +306,10 @@ function draw(){
     drawBall();
 
     DrawBricks();
- // SHOW SCORE
- showGameStats(SCORE, 35, 25, SCORE_IMG, 5, 5);
- // SHOW LIVES
- showGameStats(LIFE, cvs.width - 25, 25, LIFE_IMG, cvs.width-55, 5); 
+
+    showStats(SCORE, 35, 25, SCORE_IMG, 5, 5);
+
+    showStats(LIFE, cvs.width - 25, 25, LIFE_IMG, cvs.width-55, 5); 
 
     
 
