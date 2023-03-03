@@ -32,6 +32,9 @@ const SCORE_UNIT = 2;
 //movevment vars:
 let leftArrow = false;
 let rightArrow = false;
+/////
+//LocalStorage 
+
 ///////////////////////
 
 
@@ -127,7 +130,22 @@ function ballBrickCollision(){
           ball.dy = - ball.dy;
           b.status = b.status - 1 ;
           SCORE += SCORE_UNIT;
-         
+          HighScore += SCORE_UNIT;
+          let Win = true ;
+          for(let i1=0; i1<Brick.row; i1++){
+            for(let j1=0; j1<Brick.coluwn; j1++){
+              if (bricks[i1][j1].status != 0){
+                Win = false;
+              }
+            }
+          }
+          if (Win == true )
+          {
+            window.location = 'youwon.html';
+  
+          }
+  
+     }
       }
     }
   }
@@ -288,6 +306,7 @@ function ballPaddleCollision(){
         ball.dy = - ball.speed * Math.cos(angle);
     }
 }
+
 function showStats(text, textX, textY, img, imgX, imgY){
   // draw text
   ctx.fillStyle = "#FFF";
@@ -306,11 +325,12 @@ function draw(){
     drawBall();
 
     DrawBricks();
-
-    showStats(SCORE, 35, 25, SCORE_IMG, 5, 5);
-
-    showStats(LIFE, cvs.width - 25, 25, LIFE_IMG, cvs.width-55, 5); 
-
+ 
+ showStats(SCORE, 35, 25, SCORE_IMG, 5, 5);
+ 
+ showStats(LIFE, cvs.width - 25, 25, LIFE_IMG, cvs.width-55, 5); 
+ 
+ showStats(HighScore, cvs.width/2, 25, High_IMG, cvs.width/2 - 30, 5);
     
 
 }
