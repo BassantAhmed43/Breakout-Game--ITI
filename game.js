@@ -4,7 +4,7 @@ const cvs = document.getElementById("breakout");
 const ctx = cvs.getContext("2d");
 
 //BORDER..
-cvs.style.border = "3px solid #cae0e8";
+cvs.style.border = "2px solid #000000";
 
 ctx.lineWidth = 3; //make line thick
 
