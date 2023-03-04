@@ -1,6 +1,9 @@
 // SELECT CANVAS ELEMENT
 const cvs = document.getElementById("breakout");
 const ctx = cvs.getContext("2d");
+/// pause and play button
+const pause = document.getElementById("hold");
+const resume = document.getElementById("play");
 
 
 
@@ -29,6 +32,7 @@ let LIFE = 3;
 let SCORE = 0; 
 let HighScore = 0;
 const SCORE_UNIT = 2;
+let flag = true; 
 //movevment vars:
 let leftArrow = false;
 let rightArrow = false;
@@ -183,7 +187,15 @@ document.addEventListener("keydown",function(event)
     rightArrow = true;
   }
 });
-
+// pause and resume events
+pause.addEventListener("click",function(){
+  resetBall();
+  flag = false;
+  });
+  resume.addEventListener("click",function(){
+    flag = true;
+    requestAnimationFrame(loop);
+});
 
 
 
@@ -352,7 +364,9 @@ function loop(){
     
     update();
 
-    
-    requestAnimationFrame(loop);
+    if (flag) {
+      requestAnimationFrame(loop);
+  }
+    //requestAnimationFrame(loop);
 }
 loop();
