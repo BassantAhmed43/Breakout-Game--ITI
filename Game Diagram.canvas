@@ -1,0 +1,43 @@
+{
+	"nodes":[
+		{"type":"text","text":"The Paddle","id":"4b7a5029447ebf33","x":-725,"y":-370,"width":250,"height":60},
+		{"type":"text","text":"Lives","id":"b4d951bd08f86542","x":-725,"y":180,"width":250,"height":50},
+		{"type":"text","text":"Sound","id":"7b4b1e77f9bc76f6","x":295,"y":-960,"width":250,"height":50},
+		{"type":"text","text":"Game","id":"5a224b523070c7ba","x":600,"y":-800,"width":250,"height":60},
+		{"type":"text","text":"Ball","id":"bb458afd19b7d1ed","x":365,"y":-680,"width":250,"height":60},
+		{"type":"text","text":"Background Load","id":"44104d9880d5ac0d","x":0,"y":-560,"width":250,"height":60},
+		{"type":"text","text":"game over","id":"85beea761737a9ba","x":-920,"y":400,"width":250,"height":60},
+		{"type":"text","text":"the ball falling","id":"111c1786005482f3","x":-520,"y":5,"width":250,"height":60},
+		{"type":"text","text":"Game Start","id":"00b11b76a50c213a","x":-250,"y":-800,"width":250,"height":60},
+		{"type":"text","text":"The Brick","id":"f2e163564e9ffc48","x":760,"y":-370,"width":250,"height":60},
+		{"type":"text","text":"High score","id":"1cbb191c4d55375c","x":125,"y":560,"width":250,"height":60},
+		{"type":"text","text":"winner","id":"8dcfdb300c1c934a","x":580,"y":560,"width":250,"height":60},
+		{"type":"text","text":"Colision","id":"945d2a5941af9468","x":480,"y":-160,"width":250,"height":60},
+		{"type":"text","text":"control of ball","id":"6cdb5de77444ad03","x":-880,"y":-190,"width":250,"height":60},
+		{"type":"text","text":"Score","id":"68ecc4cca03c5544","x":330,"y":400,"width":250,"height":60},
+		{"id":"93ffa5dde68c66f4","x":45,"y":-310,"width":250,"height":60,"type":"text","text":"Ball"},
+		{"type":"text","text":"Ball","id":"85019b69fc91d66d","x":510,"y":200,"width":250,"height":60},
+		{"id":"42e1f08d476604b3","x":45,"y":65,"width":250,"height":60,"type":"text","text":"Wall"}
+	],
+	"edges":[
+		{"id":"51b9dcbf73bc79bb","fromNode":"f2e163564e9ffc48","fromSide":"bottom","toNode":"945d2a5941af9468","toSide":"top"},
+		{"id":"62c718c1c5f2bc39","fromNode":"00b11b76a50c213a","fromSide":"bottom","toNode":"44104d9880d5ac0d","toSide":"top"},
+		{"id":"6b118d71dcf0ed98","fromNode":"68ecc4cca03c5544","fromSide":"bottom","toNode":"1cbb191c4d55375c","toSide":"top"},
+		{"id":"05f6536c9130c1ae","fromNode":"b4d951bd08f86542","fromSide":"bottom","toNode":"85beea761737a9ba","toSide":"top"},
+		{"id":"976735bfc3e55a9e","fromNode":"44104d9880d5ac0d","fromSide":"bottom","toNode":"4b7a5029447ebf33","toSide":"top"},
+		{"id":"ef956d355c73ae40","fromNode":"44104d9880d5ac0d","fromSide":"bottom","toNode":"f2e163564e9ffc48","toSide":"top"},
+		{"id":"f211894051d87e95","fromNode":"4b7a5029447ebf33","fromSide":"bottom","toNode":"6cdb5de77444ad03","toSide":"top"},
+		{"id":"b72be91200d98de7","fromNode":"44104d9880d5ac0d","fromSide":"right","toNode":"7b4b1e77f9bc76f6","toSide":"left"},
+		{"id":"f37526e71302980c","fromNode":"85019b69fc91d66d","fromSide":"bottom","toNode":"68ecc4cca03c5544","toSide":"top"},
+		{"id":"4642d519087be8c4","fromNode":"7b4b1e77f9bc76f6","fromSide":"bottom","toNode":"bb458afd19b7d1ed","toSide":"top"},
+		{"id":"7c86d34b38cd5a9a","fromNode":"7b4b1e77f9bc76f6","fromSide":"bottom","toNode":"5a224b523070c7ba","toSide":"top"},
+		{"id":"e9c2942d605b6583","fromNode":"6cdb5de77444ad03","fromSide":"bottom","toNode":"111c1786005482f3","toSide":"top"},
+		{"id":"77fa80d446f1e107","fromNode":"111c1786005482f3","fromSide":"bottom","toNode":"b4d951bd08f86542","toSide":"top"},
+		{"id":"711b8bd9f06a0f85","fromNode":"68ecc4cca03c5544","fromSide":"bottom","toNode":"8dcfdb300c1c934a","toSide":"top"},
+		{"id":"ec10799884d8abcc","fromNode":"42e1f08d476604b3","fromSide":"bottom","toNode":"111c1786005482f3","toSide":"right"},
+		{"id":"7a75c0e9c23a444c","fromNode":"44104d9880d5ac0d","fromSide":"bottom","toNode":"93ffa5dde68c66f4","toSide":"top"},
+		{"id":"09ca73cd0c58047d","fromNode":"93ffa5dde68c66f4","fromSide":"bottom","toNode":"945d2a5941af9468","toSide":"top"},
+		{"id":"e1b9a681506053ab","fromNode":"945d2a5941af9468","fromSide":"bottom","toNode":"85019b69fc91d66d","toSide":"right"},
+		{"id":"b89710fa2de1f53d","fromNode":"945d2a5941af9468","fromSide":"bottom","toNode":"42e1f08d476604b3","toSide":"top"}
+	]
+}
