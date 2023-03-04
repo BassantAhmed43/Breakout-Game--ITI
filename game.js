@@ -67,7 +67,8 @@ for(let i = 0; i < Brick.row; i++){
     bricks[i][j] = {
       x : j*(Brick.width +Brick.offsetleft) + Brick.offsetleft,
       y : i*(Brick.height +Brick.offsetTop) + Brick.offsetTop+Brick.marginTop,
-      status: 2
+      status: 2 ,
+      img: new Image()
     };
   }
 }
@@ -97,19 +98,12 @@ for(let i = 0; i < Brick.row; i++){
         else if(bricks[i][j].status == 1)
         {
          //ctx.fillStyle = "#17dd23";
-         ctx.fillStyle = "#000000";
-
-
-          ctx.fillRect(bricks[i][j].x, bricks[i][j].y, Brick.width, Brick.height);
-
+         //ctx.fillStyle = "#000000";
+         //ctx.fillRect(bricks[i][j].x, bricks[i][j].y, Brick.width, Brick.height);
+         bricks[i][j].img.src = 'img/crc.jpg';
+         ctx.drawImage(bricks[i][j].img, bricks[i][j].x, bricks[i][j].y, Brick.width, Brick.height);
         }
-        else 
-        {
-         ctx.fillStyle = "#017dd23";
-
-          ctx.fillRect(bricks[i][j].x, bricks[i][j].y, Brick.width, Brick.height);
-
-        }
+      
       }            
   }
 }
